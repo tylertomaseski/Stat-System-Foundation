@@ -29,6 +29,18 @@ Buffs have a few traits: **StackableSetting**, **TargetVariable**, **ExpirationT
 ## How to use
 [Get a .unitypackage from the releases page.](https://github.com/godjammit/Stat-System-Foundation/releases) Modify and get rolling with your own project from there. 
 
+### Using your new stat-system from other pieces of code.
+
+Inside `EntityStats.cs` you'll use these five methods...
+* `GetBuffedStat(Stat targetStat)`
+* `GetBaseStat(Stat targetStat)`
+* `SetBaseStat(Stat targetStat, float value)`
+* `ModifyBaseStat(Stat targetStat, float valueToAdd)`
+* `AddBuff(Buff b)`
+You may want to write your own convenience methods to make using your stat-system simpler. I've included a three: `Hit(float damage)`, `Heal(float healthToRestore)`, and `Kill()`.
+
+### Adding your own functionality
+
 It isn't much code, I'd recommend giving it a read and familiarize yourself with it. Here are some places to look...
 * EntityStats.cs - Switch statements inside of the FixedUpdate method
 * EntityStats.cs - The "PUT POST-BUFF LOGIC HERE" portion of the FixedUpdate 
