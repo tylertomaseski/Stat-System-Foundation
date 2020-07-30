@@ -12,24 +12,24 @@ Modified Stats are calculated using **((BaseStats + AddPreMult) * Mult) + AddPos
 * **BaseStats** are defined in editor. It's the base-stat.
 ** This is used for your HP. It can be subtracted and added to, without using buffs since damage persists.
 * **AddPreMult** is a value added to the base-stat before multiplication. This scaled by the multiplier alongside the base-stat. 
-** This could be a modificaiton to base-stats. A ring that increases your faith or max-hp.
+** This could be a modification to base-stats. A ring that increases your faith or max-hp.
 * **Mult** is a multiplier. It multiplies the current value plus the AddPreMult. 
 ** This could be for weapon-scaling or a curse that halves your max-hp.
 * **AddPostMult** is a value added to the stat after multiplication. This is not scaled by the modifier.
-** This could be a curse that halves reduces your HP but restores the health after a duration.
+** This could be a curse that halves your HP but restores the health after a duration.
 
 ### Buffs
 Buffs have a few traits: **StackableSetting**, **TargetVariable**, **ExpirationType**, and **TargetStat**.
 * **StackableSetting** Can the buff stack? This could be used to ensure that only one buff of this type is applied.
 * **TargetVariable** This defines which step of the algorithm the buff targets.
 * **ExpirationType** How the buff expires. Only "timed" is provided.
-* **TargetStat** Which stat the buff modifies..
+* **TargetStat** Which stat the buff modifies.
 
 
 ## How to use
 [Get a .unitypackage from the releases page.](https://github.com/godjammit/Stat-System-Foundation/releases) Modify and get rolling with your own project from there. 
 
-It isn't much code, I'd reccomend giving it a read and familiarize yourself with it. Here are some places to look...
+It isn't much code, I'd recommend giving it a read and familiarize yourself with it. Here are some places to look...
 * EntityStats.cs - Switch statements inside of the FixedUpdate method
 * EntityStats.cs - The "PUT POST-BUFF LOGIC HERE" portion of the FixedUpdate 
 * EntityStats.cs - The Stat enum
