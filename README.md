@@ -1,3 +1,5 @@
+**This is a brand new repo! If you see any issues or have questions let me know! There's plenty of testing / iterating to do!**
+
 # Stat System Foundation
 Stat System Foundation is a starting point for adding a stat and buff/debuff system to your project. It requires that you write code and is feature-light. Most "how to make a stat system" guides for Unity are bulky and class-exploded messes (according to my personal taste). This aims to fix that by being a bit more data-driven and work within design constraints.
 
@@ -32,3 +34,5 @@ It isn't much code, I'd reccomend giving it a read and familiarize yourself with
 * EntityStats.cs - The "PUT POST-BUFF LOGIC HERE" portion of the FixedUpdate 
 * EntityStats.cs - The Stat enum
 * Buff.cs - All enums inside this file.
+
+[- @GodJammit](https://twitter.com/GodJammit)
